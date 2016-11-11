@@ -32,6 +32,12 @@ Plugin 'vim-scripts/lookupfile'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kovisoft/slimv'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-surround'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'ternjs/tern_for_vim'
+" color schemes
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'morhetz/gruvbox'
 Plugin 'sickill/vim-monokai'
@@ -54,6 +60,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
+packadd! matchit
 
 " general settings
 set bs=2            " allow backspacing over everything in insert mode
@@ -433,3 +440,6 @@ let g:slimv_swank_clojure = '! xterm -e lein repl &'
 let g:LookupFile_TagExpr = string('./filenametags')
 map <leader>lt :LUTags<CR>
 imap <leader>lt <ESC>:LUTags<CR>
+
+" --- delimitMate
+imap c<CR> <CR><Esc>O
