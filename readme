@@ -1,0 +1,4 @@
+除了 copy .vimrc 和 .vim/ 外，还要设置以下步骤：
+1. cp ./.screenrc ~
+2. 安装 nodejs 和 npm
+3. 参考 Valloric/YouCompleteMe 和 ternjs/tern_for_vim 的文档进行设置
