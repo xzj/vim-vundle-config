@@ -30,10 +30,16 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-scripts/genutils'
 Plugin 'vim-scripts/lookupfile'
 Plugin 'scrooloose/nerdtree'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'tpope/vim-surround'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'PeterRincker/vim-argumentative'
 Plugin 'kovisoft/slimv'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-surround'
+Plugin 'helino/vim-json'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
@@ -443,3 +449,44 @@ imap <leader>lt <ESC>:LUTags<CR>
 
 " --- delimitMate
 imap c<CR> <CR><Esc>O
+
+" --- easymotion
+map ; <Plug>(easymotion-prefix)
+
+map ;l <Plug>(easymotion-lineforward)
+map ;h <Plug>(easymotion-linebackward)
+
+nmap ss <Plug>(easymotion-s2)
+xmap ss <Plug>(easymotion-s2)
+omap zz <Plug>(easymotion-s2)
+nmap ff <Plug>(easymotion-f2)
+nmap FF <Plug>(easymotion-F2)
+nmap tt <Plug>(easymotion-t2)
+nmap TT <Plug>(easymotion-T2)
+
+nmap sn <Plug>(easymotion-sn)
+xmap sn <Plug>(easymotion-sn)
+omap zn <Plug>(easymotion-sn)
+nmap fn <Plug>(easymotion-fn)
+nmap Fn <Plug>(easymotion-Fn)
+nmap tn <Plug>(easymotion-tn)
+nmap Tn <Plug>(easymotion-Tn)
+
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion"
+let g:EasyMotion_smartcase = 1
+
+" --- ctrlp
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_match_window = 'top,order:btt,min:1,max:20'
+set wildignore+=*/node_modules/*,*/lib/*,*/target/*,*/classes/*,*.so,*.swp,*.zip " Linux/MacOSX
+"set wildignore+=*\\.git\\*,*\\.hg\\*,*\\.svn\\*  " Windows ('noshellslash'))"
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" --- ack.vim
+let g:ackprg = 'ag --vimgrep'
+
+" --- vim-easy-align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
