@@ -486,6 +486,7 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " --- ack.vim
 let g:ackprg = 'ag --vimgrep'
+map <leader>ag :Ack
 
 " --- vim-easy-align
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -495,3 +496,10 @@ nmap ga <Plug>(EasyAlign)
 
 " --- vim-jsx
 let g:jsx_ext_required = 0
+
+" --- tern_for_vim
+let g:tern_map_prefix = '<leader>'
+"enable keyboard shortcuts
+let g:tern_map_keys=1
+"show argument hints
+let g:tern_show_argument_hints='on_hold'
