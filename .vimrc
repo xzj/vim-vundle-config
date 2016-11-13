@@ -36,9 +36,11 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'PeterRincker/vim-argumentative'
+Plugin 'Olical/vim-enmasse'
 Plugin 'kovisoft/slimv'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'helino/vim-json'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
@@ -490,3 +492,6 @@ let g:ackprg = 'ag --vimgrep'
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" --- vim-jsx
+let g:jsx_ext_required = 0
