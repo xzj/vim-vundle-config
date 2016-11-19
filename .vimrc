@@ -27,8 +27,8 @@ Plugin 'VundleVim/Vundle.vim'
 " different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
-Plugin 'vim-scripts/genutils'
-Plugin 'vim-scripts/lookupfile'
+"Plugin 'vim-scripts/genutils'
+"Plugin 'vim-scripts/lookupfile'
 Plugin 'scrooloose/nerdtree'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-surround'
@@ -445,9 +445,9 @@ let g:lisp_rainbow = 1
 let g:slimv_swank_clojure = '! xterm -e lein repl &'
 
 " --- lookupfile
-let g:LookupFile_TagExpr = string('./filenametags')
-map <leader>lt :LUTags<CR>
-imap <leader>lt <ESC>:LUTags<CR>
+"let g:LookupFile_TagExpr = string('./filenametags')
+"map <leader>lt :LUTags<CR>
+"imap <leader>lt <ESC>:LUTags<CR>
 
 " --- delimitMate
 imap c<CR> <CR><Esc>O
