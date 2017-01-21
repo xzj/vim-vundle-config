@@ -455,8 +455,23 @@ imap c<CR> <CR><Esc>O
 " --- easymotion
 map ; <Plug>(easymotion-prefix)
 
-map ;l <Plug>(easymotion-lineforward)
-map ;h <Plug>(easymotion-linebackward)
+nmap zl <Plug>(easymotion-lineforward)
+nmap zh <Plug>(easymotion-linebackward)
+nmap zj <Plug>(easymotion-j)
+nmap zk <Plug>(easymotion-k)
+
+map f <Plug>(easymotion-f)
+map F <Plug>(easymotion-F)
+map t <Plug>(easymotion-t)
+map T <Plug>(easymotion-T)
+map w <Plug>(easymotion-w)
+map W <Plug>(easymotion-W)
+map b <Plug>(easymotion-b)
+map B <Plug>(easymotion-B)
+map e <Plug>(easymotion-e)
+map E <Plug>(easymotion-E)
+map ge <Plug>(easymotion-ge)
+map gE <Plug>(easymotion-gE)
 
 nmap ss <Plug>(easymotion-s2)
 xmap ss <Plug>(easymotion-s2)
