@@ -51,6 +51,7 @@ Plugin 'morhetz/gruvbox'
 Plugin 'sickill/vim-monokai'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'tpope/vim-commentary'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
