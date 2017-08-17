@@ -452,6 +452,8 @@ let g:slimv_swank_clojure = '! xterm -e lein repl &'
 
 " --- delimitMate
 imap c<CR> <CR><Esc>O
+imap <leader>k <Plug>delimitMateS-Tab
+imap <leader>l <Plug>delimitMateJumpMany
 
 " --- easymotion
 map ; <Plug>(easymotion-prefix)
