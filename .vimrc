@@ -52,6 +52,8 @@ Plugin 'sickill/vim-monokai'
 Plugin 'jonathanfilip/vim-lucius'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-commentary'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-repeat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -521,3 +523,6 @@ let g:tern_map_prefix = '<leader>'
 let g:tern_map_keys=1
 "show argument hints
 let g:tern_show_argument_hints='on_hold'
+
+" --- vim-gitgutter
+set updatetime=250
